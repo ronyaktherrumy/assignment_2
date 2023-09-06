@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --font-size: 48px;
+  --primary-color: #0b0223;
+  --secondary-color: #8758f1;
+  --third-color: #ff42a5;
+  --btn-text-color: #ffffff;
+  --btn-secondary-color: #4ec5f7;
+}
+.primary-btn {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #ff42a5;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 30px;
+}
+.link > ul {
+  display: flex;
+  gap: 18px;
+}
+ul > li {
+  list-style: none;
+  font-size: 0.7rem;
+  font-family: none;
+}
+li > i {
+  margin-left: 10px;
+}
+/* bannar start  */
+.banner-content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.banner-left > h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--font-size);
+}
+.banner-left > h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.banner-left > p {
+  margin-bottom: 17px;
+}
+
+.button {
+  display: flex;
+  gap: 24px;
+}
+.banner-right > img {
+  height: 500px;
+  width: 400px;
+}
+/* banner end  */
+/* we are gamer section start  */
+.gamer {
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-around;
+  padding:10px 50px 50px 80px ;
+  align-items: center;
+}
+.gamer-left> img{
+  height: 400px;
+  width: 300px;
+}
+.gamer-right{
+  width: 520px;
+} 
+
+
+/* we are gamer section end  */
+/* responsiv mobile */
+@media screen and (max-width: 576px) {
+  .navigation {
+    flex-direction: column;
+    margin-bottom: 140px;
+  }
+  .banner-content {
+    width: 60%;
+    padding-left: 80px;
+    flex-direction: column;
+  }
+  .banner-left > h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .banner-left > h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .primary-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #ff42a5;
+  }
+  .banner-right > img {
+    height: 400px;
+    width: 300px;
+  }
+}
+/* responsiv tablet */
+@media screen and (max-width: 576px) and (min-width: 900px) {
+  .banner-content {
+    width: 60%;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .banner-left > h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+}
