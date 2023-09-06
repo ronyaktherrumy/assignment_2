@@ -29,6 +29,8 @@
   justify-content: space-around;
   align-items: center;
   margin: 20px 30px;
+  min-height: 50px;
+  background-color:floralwhite;
 }
 .link > ul {
   display: flex;
@@ -66,8 +68,9 @@ li > i {
   font-weight: 800;
   margin-bottom: 24px;
 }
-.online>p,
-.card-info>p,
+.dowlode-left-side > p,
+.online > p,
+.card-info > p,
 .banner-left > p,
 .gamer-right > p,
 .gamer-right > h3 {
@@ -106,6 +109,7 @@ li > i {
 .gamer-right {
   width: 520px;
 }
+.dowlode-left-side > h1,
 .gamer-right > h2,
 p,
 button {
@@ -122,37 +126,70 @@ button {
 
 /* we are gamer section end  */
 
-.card-container{
-display: flex;
-justify-content: space-evenly;
-gap: 10px;
-
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 400px;
 }
-.card-info{
+.card-info {
   width: 342px;
-height: 400px;
-margin-top: 50px;
+  height: 400px;
+  margin-top: 50px;
 }
- .card-info>img:hover{
- transform: scale(1.2);
+.card-info > img:hover {
+  transform: scale(1.2);
+  opacity: -2.7 rgb(55, 51, 51);
+  border: 10px solid #f948b2;
   border-radius: 20px;
-
-
-} 
-.card-info>p{
+  background: #f948b2;
+}
+.card-info > p {
   margin-bottom: 20px;
 }
-.online>h2{
+.online > h2 {
   font-size: var(--font-size);
   margin-bottom: 15px;
 }
 
-.online>h2, p{
+.online > h2,
+p {
   text-align: center;
- 
 }
-.online{
-  margin-bottom: 100px;
+.online {
+  margin-bottom: 120px;
+}
+/* online section end  */
+/* downlode section start  */
+.downlode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 200px;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 350px;
+}
+.downlode-right-side > .background-img {
+  width: 634.833px;
+  height: 650px;
+  border-radius: 8px;
+  margin-top: 400px;
+}
+.downlode-right-side > .top-img {
+  margin-top: -200px;
+  padding: 40px;
+  margin-left: -400px;
+  margin-bottom: 300px;
+}
+
+
+/* downlode section end  */
+.new-section{
+  display: flex;
+  justify-content: center;
 }
 
 /* responsiv mobile */
@@ -197,7 +234,7 @@ margin-top: 50px;
   .gamer {
     flex-direction: column-reverse;
     margin-top: 270px;
-    padding: 10px 20px 30px 30px;
+    padding: 10px 20px 30px 40px;
   }
 
   .gamer-right > h2 {
@@ -211,31 +248,60 @@ margin-top: 50px;
   .gamer-right {
     text-align: center;
   }
-  .card-container{
-  flex-direction: column;
-   margin-bottom: 20px;
+  .card-container {
+    flex-direction: column;
+    margin-bottom: 20px;
     width: 100%;
-    }
-    .online{
-      margin-top: 100px;
-     padding: 20px 40px;
-    }
-    .card-info{
-      width: 300px;
+  }
+  .online {
+    margin-top: 100px;
+    padding: 20px 40px;
+  }
+  .card-info {
+    width: 300px;
     height: 350px;
     margin-bottom: 60px;
-    }
-    .online>h2{
-      font-size: 28px;
-     margin-bottom: 15px;
-    }
-    .online>p{
-      margin-bottom: 5px;
-    }
-    .online{
-      margin-bottom: 50px;
-    }
+  }
+  .online > h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .online > p {
+    margin-bottom: 5px;
+  }
+  .online {
+    margin-bottom: 50px;
+  }
 
+  /* downlode section  */
+  .downlode {
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    margin-top: 470px;
+    width: 100%;
+    height: 50vh;
+    margin-left: 80px;
+  }
+  .downlode-left-side {
+    margin-bottom: 10px;
+   
+  }
+  .downlode-right-side > .background-img {
+    width: 434.833px;
+    height: 550px;
+    border-radius: 8px;
+    margin-top: 0px;
+  }
+  .downlode-right-side > .top-img {
+    padding-left: 80px;
+    margin-top: -150px;
+
+    margin-left: -150px;
+  }
+  .dowlode-left-side {
+    margin-top:  300px;
+  }
 }
 /* responsiv tablet */
 @media screen and (max-width: 576px) and (min-width: 900px) {
@@ -253,15 +319,14 @@ margin-top: 50px;
     gap: 50px;
     text-align: center;
   }
-  .card-container{
-  display: flex;
-  justify-content: center;
-  margin: 80px;
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
   }
-  .card-info{
+  .card-info {
     width: 302px;
-  height: 200px;
-  margin-top: 50px;
+    height: 200px;
+    margin-top: 50px;
   }
-
 }
