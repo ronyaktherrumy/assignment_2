@@ -15,6 +15,7 @@
   --third-color: #ff42a5;
   --btn-text-color: #ffffff;
   --btn-secondary-color: #4ec5f7;
+  --text-color: #534c64;
 }
 .primary-btn {
   padding: 20px 40px;
@@ -65,7 +66,12 @@ li > i {
   font-weight: 800;
   margin-bottom: 24px;
 }
-.banner-left > p {
+.online>p,
+.card-info>p,
+.banner-left > p,
+.gamer-right > p,
+.gamer-right > h3 {
+  color: var(--text-color);
   margin-bottom: 17px;
 }
 
@@ -81,28 +87,84 @@ li > i {
 /* we are gamer section start  */
 .gamer {
   width: 100%;
-  /* height: 500px; */
+  height: 400px;
   display: flex;
   justify-content: space-around;
-  padding:10px 50px 50px 80px ;
+  padding: 10px 150px 50px 80px;
   align-items: center;
+  text-align: end;
+  background-color: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
 }
-.gamer-left> img{
+.gamer-left > img {
   height: 400px;
-  width: 300px;
+  width: 500px;
 }
-.gamer-right{
+.gamer-right {
   width: 520px;
-} 
-
+}
+.gamer-right > h2,
+p,
+button {
+  margin-bottom: 20px;
+}
+.gamer-right > h2 {
+  font-size: var(--font-size);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* we are gamer section end  */
+
+.card-container{
+display: flex;
+justify-content: space-evenly;
+gap: 10px;
+
+}
+.card-info{
+  width: 342px;
+height: 400px;
+margin-top: 50px;
+}
+ .card-info>img:hover{
+ transform: scale(1.2);
+  border-radius: 20px;
+
+
+} 
+.card-info>p{
+  margin-bottom: 20px;
+}
+.online>h2{
+  font-size: var(--font-size);
+  margin-bottom: 15px;
+}
+
+.online>h2, p{
+  text-align: center;
+ 
+}
+.online{
+  margin-bottom: 100px;
+}
+
 /* responsiv mobile */
 @media screen and (max-width: 576px) {
   .navigation {
     flex-direction: column;
     margin-bottom: 140px;
   }
+  ul > li {
+    margin-top: 20px;
+  }
+
   .banner-content {
     width: 60%;
     padding-left: 80px;
@@ -129,6 +191,51 @@ li > i {
     height: 400px;
     width: 300px;
   }
+  /* banner end  */
+  /* gamer start */
+
+  .gamer {
+    flex-direction: column-reverse;
+    margin-top: 270px;
+    padding: 10px 20px 30px 30px;
+  }
+
+  .gamer-right > h2 {
+    font-size: 30px;
+  }
+  .gamer-right > h2,
+  p,
+  button {
+    margin-bottom: 10px;
+  }
+  .gamer-right {
+    text-align: center;
+  }
+  .card-container{
+  flex-direction: column;
+   margin-bottom: 20px;
+    width: 100%;
+    }
+    .online{
+      margin-top: 100px;
+     padding: 20px 40px;
+    }
+    .card-info{
+      width: 300px;
+    height: 350px;
+    margin-bottom: 60px;
+    }
+    .online>h2{
+      font-size: 28px;
+     margin-bottom: 15px;
+    }
+    .online>p{
+      margin-bottom: 5px;
+    }
+    .online{
+      margin-bottom: 50px;
+    }
+
 }
 /* responsiv tablet */
 @media screen and (max-width: 576px) and (min-width: 900px) {
@@ -142,4 +249,19 @@ li > i {
     font-weight: 700;
     margin-bottom: 14px;
   }
+  .gamer {
+    gap: 50px;
+    text-align: center;
+  }
+  .card-container{
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+  }
+  .card-info{
+    width: 302px;
+  height: 200px;
+  margin-top: 50px;
+  }
+
 }
