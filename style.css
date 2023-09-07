@@ -30,7 +30,7 @@
   align-items: center;
   margin: 20px 30px;
   min-height: 50px;
-  background-color:floralwhite;
+  background-color: floralwhite;
 }
 .link > ul {
   display: flex;
@@ -78,8 +78,8 @@ li > i {
   margin-bottom: 17px;
 }
 .gamer-right > p,
-.gamer-right > h3{
- text-align: start;
+.gamer-right > h3 {
+  text-align: start;
 }
 .button {
   display: flex;
@@ -98,7 +98,7 @@ li > i {
   justify-content: space-around;
   padding: 10px 10px 50px 20px;
   align-items: center;
-  text-align:start;
+  text-align: start;
   background-color: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 13.13%,
@@ -134,7 +134,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 10px;
-  /* width: 100%; */
   margin-bottom: 400px;
 }
 .card-info {
@@ -159,7 +158,6 @@ button {
 
 .online > h2,
 p {
-
   text-align: center;
 }
 .online {
@@ -167,7 +165,6 @@ p {
   height: 850px;
   margin-bottom: 120px;
   margin-left: 280px;
-  
 }
 /* online section end  */
 /* downlode section start  */
@@ -177,7 +174,7 @@ p {
   align-items: center;
   text-align: center;
   margin: 30px;
- width: 100%;
+  width: 100%;
   height: 50vh;
   margin-bottom: 350px;
 }
@@ -194,22 +191,23 @@ p {
   margin-bottom: 300px;
 }
 
-
 /* downlode section end  */
-.new-section{
- text-align: center;
+.new-section {
+  text-align: center;
   width: 100%;
-height: 427px;
-flex-shrink: 0;
-background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
-
+  height: 427px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
 }
-.new-section> .first-line>img{
+.new-section > .first-line > img {
   width: 60px;
-height: 60px;
-
+  height: 60px;
 }
-.new-section>.first-line{
+.new-section > .first-line {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -230,41 +228,39 @@ height: 60px;
   background: #f948b2;
 }
 /* footer  */
-.foot{
-  width:100%;
-height: 436px;
-background: #0B0223;
-text-align: center; 
-color: #ffffff;
-padding-top: 120px;
-
+.foot {
+  width: 100%;
+  height: 436px;
+  background: #0b0223;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 120px;
 }
 
-.foot-info{
+.foot-info {
   gap: 50px;
   display: flex;
   justify-content: center;
- align-items: center;
- margin-top: 30px;
- margin-bottom: 30px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.icon>i{
-text-align: center;
-padding-left: 40px;
-flex-wrap: wrap;
-margin-bottom: 40px;
+.icon > i {
+  text-align: center;
+  padding-left: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.foot>p{
+.foot > p {
   text-align: center;
 }
-
 
 /* responsiv mobile */
 @media screen and (max-width: 576px) {
   .navigation {
     flex-direction: column;
     margin-bottom: 140px;
-    padding: 20px 20px ;
+    padding: 20px 20px;
   }
   ul > li {
     margin-top: 20px;
@@ -303,7 +299,7 @@ margin-bottom: 40px;
     flex-direction: column-reverse;
     margin-top: 270px;
     padding: 10px 20px 30px 40px;
-   margin-left: 30px;
+    margin-left: 30px;
   }
 
   .gamer-right > h2 {
@@ -314,9 +310,7 @@ margin-bottom: 40px;
   button {
     margin-bottom: 10px;
   }
-  /* .gamer-right {
-    text-align: center;
-  } */
+
   .card-container {
     flex-direction: column;
     margin-bottom: 20px;
@@ -331,7 +325,6 @@ margin-bottom: 40px;
     height: 750px;
     margin-bottom: 120px;
     margin-left: 20px;
-    
   }
 
   .card-info {
@@ -359,11 +352,9 @@ margin-bottom: 40px;
     width: 100%;
     height: 50vh;
     margin-left: 80px;
-    
   }
   .downlode-left-side {
     margin-bottom: 10px;
-   
   }
   .downlode-right-side > .background-img {
     width: 434.833px;
@@ -378,30 +369,31 @@ margin-bottom: 40px;
     margin-left: -150px;
   }
   .dowlode-left-side {
-    margin-top:  300px;
+    margin-top: 300px;
   }
 
-  .new-section>.first-line{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  .new-section > .first-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
     margin-bottom: 20px;
     padding: 50px;
     gap: 20px;
   }
-  .new-section{
-margin-left: 40px;
-padding-top: 30px;
+  .new-section {
+    margin-left: 40px;
+    padding-top: 30px;
   }
   .secondary-btn {
     padding: 20px 30px;
   }
-    .foot-info,  .icon>i {
-      flex-wrap: wrap;
-    }
-    .foot{
-      width: 100%;
-    }
+  .foot-info,
+  .icon > i {
+    flex-wrap: wrap;
+  }
+  .foot {
+    width: 100%;
+  }
 }
 /* responsiv tablet */
 @media screen and (max-width: 576px) and (min-width: 900px) {
