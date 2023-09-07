@@ -225,7 +225,7 @@ p {
   transform: scale(1.2);
   opacity: 0.7 rgb(55, 51, 51);
   border: 5px solid #0b0223;
-  background: #f948b2;
+  /* background: #f948b2; */
 }
 /* footer  */
 .foot {
@@ -393,32 +393,5 @@ p {
   }
   .foot {
     width: 100%;
-  }
-}
-/* responsiv tablet */
-@media screen and (max-width: 576px) and (min-width: 900px) {
-  .banner-content {
-    width: 60%;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .banner-left > h1 {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 14px;
-  }
-  .gamer {
-    gap: 50px;
-    text-align: center;
-  }
-  .card-container {
-    display: flex;
-    justify-content: center;
-    margin: 80px;
-  }
-  .card-info {
-    width: 302px;
-    height: 200px;
-    margin-top: 50px;
   }
 }
